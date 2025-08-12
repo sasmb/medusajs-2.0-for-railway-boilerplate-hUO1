@@ -6,7 +6,8 @@ Successfully integrated WhatsApp order completion functionality into the MedusaJ
 ## What Was Implemented
 
 ### 1. WhatsApp Utility Functions (`/src/lib/whatsapp.ts`)
-- **WhatsApp API Integration**: Uses the correct WhatsApp API format `https://api.whatsapp.com/send/` with phone number 5P5CGNT7H4U4A1
+- **WhatsApp API Integration**: Uses the correct WhatsApp API format `https://api.whatsapp.com/send/` 
+- **Phone Number Configuration**: Requires a real WhatsApp business phone number in international format (e.g., "905338671466" for Turkey, "1234567890" for US)
 - **Manual Payment Detection**: `isManualPaymentOrder()` function identifies orders made with manual payments
 - **Message Generation**: Creates comprehensive order confirmation messages including:
   - Order number and date
