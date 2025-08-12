@@ -1,8 +1,7 @@
 import { HttpTypes } from "@medusajs/types"
 
-// WhatsApp business configuration - Replace with your actual phone number in international format
-// Example: "1234567890" for US number, "905338671466" for Turkey, etc.
-export const WHATSAPP_BUSINESS_NUMBER = "1234567890" // Replace with your real WhatsApp business number
+// WhatsApp business configuration
+export const WHATSAPP_BUSINESS_NUMBER = "905338671466"
 
 /**
  * Checks if an order was made using manual payment

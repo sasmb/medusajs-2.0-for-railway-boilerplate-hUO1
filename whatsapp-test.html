@@ -7,8 +7,8 @@
     <h1>WhatsApp URL Test</h1>
     
     <h2>Test 1: Simple Message</h2>
-    <a href="https://api.whatsapp.com/send/?phone=1234567890&text=Hello%20World&type=phone_number&app_absent=0" target="_blank">
-        Test Simple Message (Replace 1234567890 with real number)
+    <a href="https://api.whatsapp.com/send/?phone=905338671466&text=Hello%20World&type=phone_number&app_absent=0" target="_blank">
+        Test Simple Message
     </a>
     
     <h2>Test 2: Order Message</h2>
@@ -40,7 +40,7 @@ I would like to confirm this order and proceed with any additional steps needed.
 
         // Set the order message link
         const encodedMessage = encodeURIComponent(testMessage);
-        const whatsappUrl = `https://api.whatsapp.com/send/?phone=1234567890&text=${encodedMessage}&type=phone_number&app_absent=0`;
+        const whatsappUrl = `https://api.whatsapp.com/send/?phone=905338671466&text=${encodedMessage}&type=phone_number&app_absent=0`;
         
         document.getElementById('orderMessageLink').href = whatsappUrl;
         document.getElementById('orderMessageLink').textContent = 'Test Order Message';
