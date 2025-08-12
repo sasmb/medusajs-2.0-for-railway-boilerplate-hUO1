@@ -2,7 +2,6 @@ import { HttpTypes } from "@medusajs/types"
 
 // WhatsApp business configuration
 export const WHATSAPP_BUSINESS_NUMBER = "5P5CGNT7H4U4A1"
-export const WHATSAPP_API_URL = "wa.me/message"
 
 /**
  * Checks if an order was made using manual payment
@@ -17,7 +16,7 @@ export function isManualPaymentOrder(order: HttpTypes.StoreOrder): boolean {
  */
 export function generateWhatsAppUrl(message: string): string {
   const encodedMessage = encodeURIComponent(message)
-  return `https://${WHATSAPP_API_URL}/${WHATSAPP_BUSINESS_NUMBER}?text=${encodedMessage}`
+  return `https://api.whatsapp.com/send/?phone=${WHATSAPP_BUSINESS_NUMBER}&text=${encodedMessage}&type=phone_number&app_absent=0`
 }
 
 /**
@@ -58,6 +57,10 @@ I would like to confirm this order and proceed with any additional steps needed.
 export function sendOrderToWhatsApp(order: HttpTypes.StoreOrder): void {
   const message = generateOrderConfirmationMessage(order)
   const whatsappUrl = generateWhatsAppUrl(message)
+  
+  // Debug logging to help troubleshoot
+  console.log('Generated WhatsApp message:', message)
+  console.log('Generated WhatsApp URL:', whatsappUrl)
   
   // Open WhatsApp in a new tab/window
   if (typeof window !== 'undefined') {

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp URL Test</title>
+</head>
+<body>
+    <h1>WhatsApp URL Test</h1>
+    
+    <h2>Test 1: Simple Message</h2>
+    <a href="https://api.whatsapp.com/send/?phone=5P5CGNT7H4U4A1&text=Hello%20World&type=phone_number&app_absent=0" target="_blank">
+        Test Simple Message
+    </a>
+    
+    <h2>Test 2: Order Message</h2>
+    <a id="orderMessageLink" href="#" target="_blank">
+        Test Order Message
+    </a>
+    
+    <h2>Test 3: Generated URL</h2>
+    <button onclick="testGeneratedUrl()">Test Generated URL</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        // Test order-like message
+        const testMessage = `Hi! I've successfully placed an order on your website.
+
+Order Details:
+📋 Order Number: 1001
+📅 Order Date: 12/20/2024
+📧 Email: test@example.com
+📍 Billing Address: John Doe, 123 Main St, City, 12345, US
+
+🛍️ Items Ordered:
+• 1x Test Product - 29.99 USD
+
+💰 Total Amount: 29.99 USD
+
+I would like to confirm this order and proceed with any additional steps needed. Thank you!`;
+
+        // Set the order message link
+        const encodedMessage = encodeURIComponent(testMessage);
+        const whatsappUrl = `https://api.whatsapp.com/send/?phone=5P5CGNT7H4U4A1&text=${encodedMessage}&type=phone_number&app_absent=0`;
+        
+        document.getElementById('orderMessageLink').href = whatsappUrl;
+        document.getElementById('orderMessageLink').textContent = 'Test Order Message';
+        
+        function testGeneratedUrl() {
+            const output = document.getElementById('output');
+            output.innerHTML = `
+                <h3>Generated URL:</h3>
+                <p style="word-break: break-all;">${whatsappUrl}</p>
+                <h3>Message Preview:</h3>
+                <pre>${testMessage}</pre>
+            `;
+            
+            // Also open the URL
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
