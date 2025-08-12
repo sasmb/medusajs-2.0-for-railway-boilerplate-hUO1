@@ -9,6 +9,7 @@ import OrderDetails from "@modules/order/components/order-details"
 import ShippingDetails from "@modules/order/components/shipping-details"
 import PaymentDetails from "@modules/order/components/payment-details"
 import WhatsAppCompletionButton from "@modules/order/components/whatsapp-completion-button"
+import { isManualPaymentOrder } from "@lib/whatsapp"
 import { HttpTypes } from "@medusajs/types"
 
 type OrderCompletedTemplateProps = {
@@ -19,6 +20,7 @@ export default function OrderCompletedTemplate({
   order,
 }: OrderCompletedTemplateProps) {
   const isOnboarding = cookies().get("_medusa_onboarding")?.value === "true"
+  const isManualPayment = isManualPaymentOrder(order)
 
   return (
     <div className="py-6 min-h-[calc(100vh-64px)]">
@@ -33,7 +35,12 @@ export default function OrderCompletedTemplate({
             className="flex flex-col gap-y-3 text-ui-fg-base text-3xl mb-4"
           >
             <span>Thank you!</span>
-            <span>Your order was placed successfully.</span>
+            <span>
+              {isManualPayment 
+                ? "Successfully complete your order with whatsapp." 
+                : "Your order was placed successfully."
+              }
+            </span>
           </Heading>
           <OrderDetails order={order} />
           <Heading level="h2" className="flex flex-row text-3xl-regular">
@@ -43,7 +50,7 @@ export default function OrderCompletedTemplate({
           <CartTotals totals={order} />
           <ShippingDetails order={order} />
           <PaymentDetails order={order} />
-          <WhatsAppCompletionButton order={order} />
+          {isManualPayment && <WhatsAppCompletionButton order={order} />}
           <Help />
         </div>
       </div>

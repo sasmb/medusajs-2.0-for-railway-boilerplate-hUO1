@@ -5,6 +5,14 @@ export const WHATSAPP_BUSINESS_NUMBER = "5P5CGNT7H4U4A1"
 export const WHATSAPP_API_URL = "wa.me/message"
 
 /**
+ * Checks if an order was made using manual payment
+ */
+export function isManualPaymentOrder(order: HttpTypes.StoreOrder): boolean {
+  const payment = order.payment_collections?.[0]?.payments?.[0]
+  return payment?.provider_id?.startsWith("pp_system_default") || false
+}
+
+/**
  * Generates a WhatsApp URL with a pre-filled message
  */
 export function generateWhatsAppUrl(message: string): string {

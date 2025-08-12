@@ -1,12 +1,13 @@
 # WhatsApp Order Completion Integration - Implementation Summary
 
 ## Overview
-Successfully integrated WhatsApp order completion functionality into the MedusaJS order confirmation page. When customers complete a manual payment, they can now send their order details directly to WhatsApp for immediate assistance and confirmation.
+Successfully integrated WhatsApp order completion functionality into the MedusaJS order confirmation page. **This feature is exclusively designed for manual payments** - when customers complete a manual payment, they see a special header and can send their order details directly to WhatsApp for immediate assistance and confirmation. Other payment methods (Stripe, PayPal, etc.) maintain the original confirmation experience.
 
 ## What Was Implemented
 
 ### 1. WhatsApp Utility Functions (`/src/lib/whatsapp.ts`)
 - **WhatsApp API Integration**: Uses the provided WhatsApp link `wa.me/message/5P5CGNT7H4U4A1`
+- **Manual Payment Detection**: `isManualPaymentOrder()` function identifies orders made with manual payments
 - **Message Generation**: Creates comprehensive order confirmation messages including:
   - Order number and date
   - Customer email and billing address
@@ -21,7 +22,10 @@ Successfully integrated WhatsApp order completion functionality into the MedusaJ
 - **Error Handling**: Gracefully handles any issues with opening WhatsApp
 
 ### 3. Order Confirmation Template Integration
-- **Seamless Placement**: Added between payment details and help section
+- **Conditional Display**: Only appears for manual payment orders (`pp_system_default`)
+- **Custom Header**: Shows "Successfully complete your order with whatsapp." for manual payments
+- **Original Experience Preserved**: Stripe, PayPal, and other payment methods show standard "Your order was placed successfully."
+- **Seamless Placement**: WhatsApp button appears between payment details and help section for manual payments only
 - **Consistent Styling**: Matches the existing MedusaJS UI components
 - **Responsive Design**: Works on both desktop and mobile devices
 
@@ -31,7 +35,9 @@ Successfully integrated WhatsApp order completion functionality into the MedusaJ
 1. Customer clicks "Place order" for manual payment
 2. Order is successfully created in MedusaJS
 3. Customer is redirected to order confirmation page
-4. **NEW**: WhatsApp completion button is displayed
+4. **NEW**: Special header appears: "Successfully complete your order with whatsapp."
+5. **NEW**: WhatsApp completion button is displayed
+6. **Note**: Other payment methods show the standard "Your order was placed successfully." header and no WhatsApp button
 
 ### WhatsApp Flow:
 1. Customer clicks "Complete with WhatsApp" button
@@ -83,13 +89,18 @@ Successfully integrated WhatsApp order completion functionality into the MedusaJ
 
 ## Files Modified/Created
 
-1. **New**: `/src/lib/whatsapp.ts` - WhatsApp utility functions
+1. **New**: `/src/lib/whatsapp.ts` - WhatsApp utility functions and manual payment detection
 2. **New**: `/src/modules/order/components/whatsapp-completion-button/index.tsx` - Button component
-3. **Modified**: `/src/modules/order/templates/order-completed-template.tsx` - Added WhatsApp button
+3. **Modified**: `/src/modules/order/templates/order-completed-template.tsx` - Added conditional header and WhatsApp button for manual payments only
 
 ## Usage
 
-The WhatsApp completion button automatically appears on every order confirmation page. Customers who used manual payment (or any payment method) can use this feature to:
+The WhatsApp completion feature **automatically appears only for manual payment orders**. The system detects if the order used the `pp_system_default` payment provider and conditionally shows:
+
+- **Custom Header**: "Successfully complete your order with whatsapp."
+- **WhatsApp Completion Button**: One-click order sharing functionality
+
+**For manual payment customers**, this feature enables them to:
 
 - Get immediate assistance with their order
 - Confirm payment arrangements for manual payments
