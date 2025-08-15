@@ -8,11 +8,11 @@ const Hero = () => {
   
   const images = [
     "/image/heropic.png",
-    "/image/har2.png", 
-    "/image/owner.png",
     "/image/Screenshot 2025-08-15 at 16.08.19.png",
     "/image/Screenshot 2025-08-15 at 16.11.13.png",
-    "/image/Screenshot 2025-08-15 at 16.11.47.png"
+    "/image/Screenshot 2025-08-15 at 16.11.47.png",
+    "/image/Screenshot 2025-08-15 at 17.13.43.png",
+    "/image/Screenshot 2025-08-15 at 17.15.42.png"
   ]
 
   useEffect(() => {
@@ -48,19 +48,19 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <Heading
             level="h1"
-            className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg"
+            className="font-times-header-xl mb-6 drop-shadow-lg"
           >
             Luxury Hair Cyprus
           </Heading>
           
           <Heading
             level="h2"
-            className="text-xl md:text-2xl text-gray-200 mb-8 font-light max-w-2xl mx-auto leading-relaxed"
+            className="font-abc-text-md mb-8 max-w-2xl mx-auto"
           >
             Premium & affordable hair in North Cyprus • Installmental payment accepted • Delivery 🚚 is not a problem
           </Heading>
           
-          <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
+          <p className="font-abc-text-sm mb-10 max-w-xl mx-auto">
             We will be very happy to see your message
           </p>
           

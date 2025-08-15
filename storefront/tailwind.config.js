@@ -69,6 +69,8 @@ module.exports = {
           "Ubuntu",
           "sans-serif",
         ],
+        'times-header': ['TimesNow', 'serif'],
+        'abc-permanent': ['ABCPermanent', 'Arial', 'sans-serif'],
       },
       keyframes: {
         ring: {

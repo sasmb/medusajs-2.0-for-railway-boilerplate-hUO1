@@ -2,6 +2,26 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+/* Custom Font Faces */
+@font-face {
+  font-family: 'TimesNow';
+  src: local('Times New Roman'), local('Times'), local('serif');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCPermanent';
+  src: local('Arial'), local('Helvetica'), local('sans-serif');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer utilities {
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
@@ -108,5 +128,61 @@
 
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
+  }
+
+  /* Custom Typography Classes */
+  .font-times-header {
+    font-family: 'TimesNow', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  .font-abc-text {
+    font-family: 'ABCPermanent', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  /* Responsive header sizes */
+  .font-times-header-lg {
+    font-family: 'TimesNow', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: clamp(32px, 6vw, 50px);
+    line-height: clamp(30px, 5.5vw, 45px);
+  }
+
+  .font-times-header-xl {
+    font-family: 'TimesNow', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: clamp(40px, 8vw, 70px);
+    line-height: clamp(36px, 7vw, 65px);
+  }
+
+  .font-abc-text-sm {
+    font-family: 'ABCPermanent', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: clamp(10px, 1.5vw, 14px);
+    line-height: clamp(12px, 2vw, 16px);
+  }
+
+  .font-abc-text-md {
+    font-family: 'ABCPermanent', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-size: clamp(12px, 2vw, 16px);
+    line-height: clamp(14px, 2.5vw, 18px);
   }
 }

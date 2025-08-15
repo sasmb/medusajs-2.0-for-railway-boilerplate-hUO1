@@ -11,8 +11,11 @@ import { HttpTypes } from "@medusajs/types"
 
 const SideMenuItems = {
   Home: "/",
-  Store: "/store",
-  Search: "/search",
+  Shop: "/store",
+  "Hair Treatments": "/collections",
+  "Styling Guide": "/categories", 
+  "Salon Locator": "/search",
+  "About Us": "/about",
   Account: "/account",
   Cart: "/cart",
 }
@@ -29,9 +32,13 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
               <div className="relative flex h-full">
                 <Popover.Button
                   data-testid="nav-menu-button"
-                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
+                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none text-white hover:text-gray-300"
                 >
-                  Menu
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <line x1="4" y1="6" x2="20" y2="6"/>
+                    <line x1="4" y1="12" x2="20" y2="12"/>
+                    <line x1="4" y1="18" x2="20" y2="18"/>
+                  </svg>
                 </Popover.Button>
               </div>
 

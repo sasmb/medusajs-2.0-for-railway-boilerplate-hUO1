@@ -1,4 +1,5 @@
 import { Suspense } from "react"
+import { User, ShoppingBag } from "@medusajs/icons"
 
 import { listRegions } from "@lib/data/regions"
 import { StoreRegion } from "@medusajs/types"
@@ -11,57 +12,88 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto border-b duration-200 bg-white border-ui-border-base">
-        <nav className="content-container txt-xsmall-plus text-ui-fg-subtle flex items-center justify-between w-full h-full text-small-regular">
-          <div className="flex-1 basis-0 h-full flex items-center">
-            <div className="h-full">
-              <SideMenu regions={regions} />
-            </div>
-          </div>
-
-          <div className="flex items-center h-full">
+      <header className="relative h-16 mx-auto bg-black">
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full h-full">
+          {/* Left - Brand Logo */}
+          <div className="flex items-center">
             <LocalizedClientLink
               href="/"
-              className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+              className="font-times-header-lg hover:text-gray-300 transition-colors"
               data-testid="nav-store-link"
             >
-              Medusa Store
+              LUXURY HAIR
             </LocalizedClientLink>
           </div>
 
-          <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
-              {process.env.NEXT_PUBLIC_FEATURE_SEARCH_ENABLED && (
-                <LocalizedClientLink
-                  className="hover:text-ui-fg-base"
-                  href="/search"
-                  scroll={false}
-                  data-testid="nav-search-link"
-                >
-                  Search
-                </LocalizedClientLink>
-              )}
+          {/* Center - Navigation Links */}
+          <div className="hidden lg:flex items-center space-x-8">
+            <LocalizedClientLink
+              href="/store"
+              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              data-testid="nav-shop-link"
+            >
+              SHOP
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/collections"
+              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              data-testid="nav-treatments-link"
+            >
+              HAIR TREATMENTS
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/categories"
+              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              data-testid="nav-labs-link"
+            >
+              STYLING GUIDE
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/search"
+              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              data-testid="nav-locator-link"
+            >
+              SALON LOCATOR
+            </LocalizedClientLink>
+            <LocalizedClientLink
+              href="/about"
+              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              data-testid="nav-about-link"
+            >
+              ABOUT US
+            </LocalizedClientLink>
+          </div>
+
+          {/* Right - User Actions */}
+          <div className="flex items-center space-x-6">
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-6">
               <LocalizedClientLink
-                className="hover:text-ui-fg-base"
                 href="/account"
+                className="text-white hover:text-gray-300 transition-colors"
                 data-testid="nav-account-link"
               >
-                Account
+                <User size={20} />
               </LocalizedClientLink>
+              <Suspense
+                fallback={
+                  <LocalizedClientLink
+                    className="text-white hover:text-gray-300 transition-colors"
+                    href="/cart"
+                    data-testid="nav-cart-link"
+                  >
+                    <ShoppingBag size={20} />
+                  </LocalizedClientLink>
+                }
+              >
+                <CartButton />
+              </Suspense>
             </div>
-            <Suspense
-              fallback={
-                <LocalizedClientLink
-                  className="hover:text-ui-fg-base flex gap-2"
-                  href="/cart"
-                  data-testid="nav-cart-link"
-                >
-                  Cart (0)
-                </LocalizedClientLink>
-              }
-            >
-              <CartButton />
-            </Suspense>
+
+            {/* Mobile Menu */}
+            <div className="lg:hidden">
+              <SideMenu regions={regions} />
+            </div>
           </div>
         </nav>
       </header>
