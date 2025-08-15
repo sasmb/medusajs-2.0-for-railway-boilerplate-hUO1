@@ -18,7 +18,7 @@ export default async function Nav() {
           <div className="flex items-center">
             <LocalizedClientLink
               href="/"
-              className="font-times-header-lg hover:text-gray-300 transition-colors"
+              className="text-white text-xl font-bold tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-store-link"
             >
               LUXURY HAIR
@@ -29,35 +29,35 @@ export default async function Nav() {
           <div className="hidden lg:flex items-center space-x-8">
             <LocalizedClientLink
               href="/store"
-              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-shop-link"
             >
               SHOP
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/collections"
-              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-treatments-link"
             >
               HAIR TREATMENTS
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/categories"
-              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-labs-link"
             >
               STYLING GUIDE
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/search"
-              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-locator-link"
             >
               SALON LOCATOR
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/about"
-              className="font-abc-text-md uppercase tracking-wide hover:text-gray-300 transition-colors"
+              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
               data-testid="nav-about-link"
             >
               ABOUT US

@@ -130,59 +130,123 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 
-  /* Custom Typography Classes */
-  .font-times-header {
-    font-family: 'TimesNow', serif;
+  /* OIOI-Inspired Typography System */
+  
+  /* Headers - Professional Serif */
+  .header-serif {
+    font-family: 'TimesNow', 'Times New Roman', serif;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: -0.02em;
+  }
+
+  .header-serif-xl {
+    font-family: 'TimesNow', 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(48px, 8vw, 80px);
+    line-height: clamp(44px, 7.5vw, 76px);
+    letter-spacing: -0.02em;
+  }
+
+  .header-serif-lg {
+    font-family: 'TimesNow', 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(32px, 6vw, 50px);
+    line-height: clamp(30px, 5.5vw, 45px);
+    letter-spacing: -0.01em;
+  }
+
+  .header-serif-md {
+    font-family: 'TimesNow', 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: clamp(22px, 3.8vw, 30px);
+    letter-spacing: -0.01em;
+  }
+
+  /* Body Text - Clean Sans-Serif */
+  .body-sans {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.01em;
+  }
+
+  .body-sans-lg {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: clamp(20px, 3vw, 24px);
+    letter-spacing: 0.01em;
+  }
+
+  .body-sans-md {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: clamp(16px, 2.5vw, 20px);
+    letter-spacing: 0.01em;
+  }
+
+  .body-sans-sm {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: clamp(12px, 1.5vw, 14px);
+    line-height: clamp(14px, 2vw, 16px);
+    letter-spacing: 0.02em;
+  }
+
+  .body-sans-xs {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: clamp(10px, 1.2vw, 12px);
+    line-height: clamp(12px, 1.5vw, 14px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  /* Navigation Specific */
+  .nav-text {
+    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  /* Legacy classes for backward compatibility */
+  .font-times-header {
+    @apply header-serif;
     color: rgb(255, 255, 255);
     font-size: 50px;
     line-height: 45px;
   }
 
   .font-abc-text {
-    font-family: 'ABCPermanent', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply body-sans;
     color: rgb(255, 255, 255);
     font-size: 8px;
     line-height: 8px;
   }
 
-  /* Responsive header sizes */
   .font-times-header-lg {
-    font-family: 'TimesNow', serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply header-serif-lg;
     color: rgb(255, 255, 255);
-    font-size: clamp(32px, 6vw, 50px);
-    line-height: clamp(30px, 5.5vw, 45px);
   }
 
   .font-times-header-xl {
-    font-family: 'TimesNow', serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply header-serif-xl;
     color: rgb(255, 255, 255);
-    font-size: clamp(40px, 8vw, 70px);
-    line-height: clamp(36px, 7vw, 65px);
   }
 
   .font-abc-text-sm {
-    font-family: 'ABCPermanent', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply body-sans-sm;
     color: rgb(255, 255, 255);
-    font-size: clamp(10px, 1.5vw, 14px);
-    line-height: clamp(12px, 2vw, 16px);
   }
 
   .font-abc-text-md {
-    font-family: 'ABCPermanent', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    @apply body-sans-md;
     color: rgb(255, 255, 255);
-    font-size: clamp(12px, 2vw, 16px);
-    line-height: clamp(14px, 2.5vw, 18px);
   }
 }

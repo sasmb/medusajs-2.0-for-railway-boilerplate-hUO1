@@ -48,19 +48,19 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <Heading
             level="h1"
-            className="font-times-header-xl mb-6 drop-shadow-lg"
+            className="header-serif-xl text-white mb-6 drop-shadow-lg"
           >
             Luxury Hair Cyprus
           </Heading>
           
           <Heading
             level="h2"
-            className="font-abc-text-md mb-8 max-w-2xl mx-auto"
+            className="body-sans-lg text-gray-200 mb-8 max-w-2xl mx-auto"
           >
             Premium & affordable hair in North Cyprus • Installmental payment accepted • Delivery 🚚 is not a problem
           </Heading>
           
-          <p className="font-abc-text-sm mb-10 max-w-xl mx-auto">
+          <p className="body-sans-md text-gray-300 mb-10 max-w-xl mx-auto">
             We will be very happy to see your message
           </p>
           
