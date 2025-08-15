@@ -12,7 +12,7 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto bg-black">
+      <header className="relative h-16 mx-auto bg-transparent">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full h-full">
           {/* Left - Brand Logo Only */}
           <div className="flex items-center">
