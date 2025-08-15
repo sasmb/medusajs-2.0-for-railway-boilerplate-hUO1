@@ -79,8 +79,8 @@ const CartDropdown = ({
         <Popover.Button className="h-full text-white hover:text-gray-300 transition-colors relative">
           <div className="flex items-center" data-testid="nav-cart-link">
             <svg 
-              width="20" 
-              height="20" 
+              width="16" 
+              height="16" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 
@@ -93,7 +93,7 @@ const CartDropdown = ({
               <path d="m16 10a4 4 0 0 1-8 0"/>
             </svg>
             {totalItems > 0 && (
-              <span className="absolute -top-2 -right-2 bg-white text-black text-xs font-medium rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="absolute -top-1 -right-1 bg-white text-black text-xs font-medium rounded-full w-4 h-4 flex items-center justify-center">
                 {totalItems}
               </span>
             )}

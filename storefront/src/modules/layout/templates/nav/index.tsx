@@ -14,7 +14,7 @@ export default async function Nav() {
     <div className="sticky top-0 inset-x-0 z-50 group">
       <header className="relative h-16 mx-auto bg-black">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full h-full">
-          {/* Left - Brand Logo */}
+          {/* Left - Brand Logo Only */}
           <div className="flex items-center">
             <LocalizedClientLink
               href="/"
@@ -25,55 +25,50 @@ export default async function Nav() {
             </LocalizedClientLink>
           </div>
 
-          {/* Center - Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <LocalizedClientLink
-              href="/store"
-              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
-              data-testid="nav-shop-link"
-            >
-              SHOP
-            </LocalizedClientLink>
-            <LocalizedClientLink
-              href="/collections"
-              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
-              data-testid="nav-treatments-link"
-            >
-              HAIR TREATMENTS
-            </LocalizedClientLink>
-            <LocalizedClientLink
-              href="/categories"
-              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
-              data-testid="nav-labs-link"
-            >
-              STYLING GUIDE
-            </LocalizedClientLink>
-            <LocalizedClientLink
-              href="/search"
-              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
-              data-testid="nav-locator-link"
-            >
-              SALON LOCATOR
-            </LocalizedClientLink>
-            <LocalizedClientLink
-              href="/about"
-              className="text-white text-sm font-medium uppercase tracking-wider hover:text-gray-300 transition-colors"
-              data-testid="nav-about-link"
-            >
-              ABOUT US
-            </LocalizedClientLink>
-          </div>
+          {/* Right - Navigation + Icons */}
+          <div className="flex items-center space-x-8">
+            {/* Navigation Links */}
+            <div className="hidden lg:flex items-center space-x-8">
+              <LocalizedClientLink
+                href="/store"
+                className="text-white hover:text-gray-300 transition-colors"
+                style={{
+                  fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontWeight: 400,
+                  fontSize: '9px',
+                  lineHeight: '14px',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+                data-testid="nav-shop-link"
+              >
+                SHOP
+              </LocalizedClientLink>
+              <LocalizedClientLink
+                href="/about"
+                className="text-white hover:text-gray-300 transition-colors"
+                style={{
+                  fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontWeight: 400,
+                  fontSize: '9px',
+                  lineHeight: '14px',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+                data-testid="nav-about-link"
+              >
+                ABOUT US
+              </LocalizedClientLink>
+            </div>
 
-          {/* Right - User Actions */}
-          <div className="flex items-center space-x-6">
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-6">
+            {/* User Icons */}
+            <div className="hidden lg:flex items-center space-x-4">
               <LocalizedClientLink
                 href="/account"
                 className="text-white hover:text-gray-300 transition-colors"
                 data-testid="nav-account-link"
               >
-                <User size={20} />
+                <User size={16} />
               </LocalizedClientLink>
               <Suspense
                 fallback={
@@ -82,7 +77,7 @@ export default async function Nav() {
                     href="/cart"
                     data-testid="nav-cart-link"
                   >
-                    <ShoppingBag size={20} />
+                    <ShoppingBag size={16} />
                   </LocalizedClientLink>
                 }
               >

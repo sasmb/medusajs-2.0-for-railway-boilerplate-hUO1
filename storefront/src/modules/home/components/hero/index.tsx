@@ -48,21 +48,27 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <Heading
             level="h1"
-            className="header-serif-xl text-white mb-6 drop-shadow-lg"
+            className="text-white mb-8 drop-shadow-lg"
+            style={{
+              fontFamily: 'TimesNow, Times New Roman, serif',
+              fontWeight: 400,
+              fontSize: 'clamp(48px, 10vw, 120px)',
+              lineHeight: 'clamp(44px, 9vw, 110px)',
+              letterSpacing: '-0.02em',
+              textAlign: 'left',
+              maxWidth: '800px'
+            }}
           >
-            Luxury Hair Cyprus
+            Transformative
+            <br />
+            and
+            <br />
+            Inclusive
+            <br />
+            Salon-Grade
+            <br />
+            Hair Control
           </Heading>
-          
-          <Heading
-            level="h2"
-            className="body-sans-lg text-gray-200 mb-8 max-w-2xl mx-auto"
-          >
-            Premium & affordable hair in North Cyprus • Installmental payment accepted • Delivery 🚚 is not a problem
-          </Heading>
-          
-          <p className="body-sans-md text-gray-300 mb-10 max-w-xl mx-auto">
-            We will be very happy to see your message
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
