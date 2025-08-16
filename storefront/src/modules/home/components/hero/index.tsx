@@ -7,12 +7,12 @@ const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   
   const images = [
-    "/image/heropic.png",
     "/image/Screenshot 2025-08-15 at 16.08.19.png",
     "/image/Screenshot 2025-08-15 at 16.11.13.png",
     "/image/Screenshot 2025-08-15 at 16.11.47.png",
     "/image/Screenshot 2025-08-15 at 17.13.43.png",
-    "/image/Screenshot 2025-08-15 at 17.15.42.png"
+    "/image/Screenshot 2025-08-15 at 17.15.42.png",
+    "/image/Screenshot 2025-08-16 at 10.44.58.png"
   ]
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Hero = () => {
             </Heading>
             
             {/* Call to Action Buttons - Fourth Line */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mt-6 w-full max-w-md mx-auto">
               <Button 
                 size="small"
                 className="bg-white text-black hover:bg-gray-100 px-4 py-2 font-medium transition-all duration-300 transform hover:scale-105"

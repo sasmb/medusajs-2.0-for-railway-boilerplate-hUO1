@@ -13,22 +13,47 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         {product.collection && (
           <LocalizedClientLink
             href={`/collections/${product.collection.handle}`}
-            className="text-medium text-ui-fg-muted hover:text-ui-fg-subtle"
+            className="text-ui-fg-muted hover:text-ui-fg-subtle"
+            style={{
+              fontFamily: 'ABCPermanent, Arial, sans-serif',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              fontSize: '12px',
+              lineHeight: '16px',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase'
+            }}
           >
             {product.collection.title}
           </LocalizedClientLink>
         )}
         <Heading
           level="h2"
-          className="text-3xl leading-10 text-ui-fg-base"
+          className="text-ui-fg-base"
           data-testid="product-title"
+          style={{
+            fontFamily: 'TimesNow, Times New Roman, serif',
+            fontStyle: 'normal',
+            fontWeight: 400,
+            fontSize: '32px',
+            lineHeight: '36px',
+            letterSpacing: '-0.01em'
+          }}
         >
           {product.title}
         </Heading>
 
         <Text
-          className="text-medium text-ui-fg-subtle whitespace-pre-line"
+          className="text-ui-fg-subtle whitespace-pre-line"
           data-testid="product-description"
+          style={{
+            fontFamily: 'ABCPermanent, Arial, sans-serif',
+            fontStyle: 'normal',
+            fontWeight: 400,
+            fontSize: '14px',
+            lineHeight: '18px',
+            letterSpacing: '0.01em'
+          }}
         >
           {product.description}
         </Text>
