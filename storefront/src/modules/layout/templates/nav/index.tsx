@@ -35,13 +35,14 @@ export default async function Nav() {
             <div className="hidden lg:flex items-center space-x-8">
               <LocalizedClientLink
                 href="/store"
-                className="text-black hover:text-gray-600 transition-colors"
+                className="hover:opacity-75 transition-opacity"
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  fontSize: '11px',
-                  lineHeight: '13px',
+                  color: 'rgb(0, 0, 0)',
+                  fontSize: '9px',
+                  lineHeight: '14px',
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase'
                 }}
@@ -51,13 +52,14 @@ export default async function Nav() {
               </LocalizedClientLink>
               <LocalizedClientLink
                 href="/about"
-                className="text-black hover:text-gray-600 transition-colors"
+                className="hover:opacity-75 transition-opacity"
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  fontSize: '11px',
-                  lineHeight: '13px',
+                  color: 'rgb(0, 0, 0)',
+                  fontSize: '9px',
+                  lineHeight: '14px',
                   letterSpacing: '0.05em',
                   textTransform: 'uppercase'
                 }}
@@ -71,8 +73,7 @@ export default async function Nav() {
             <div className="hidden lg:flex items-center space-x-4">
               <LocalizedClientLink
                 href="/account"
-                className="text-black hover:text-gray-600 transition-colors"
-                style={{ filter: 'none' }}
+                className="text-black hover:opacity-75 transition-opacity"
                 data-testid="nav-account-link"
               >
                 <User size={16} />
@@ -80,7 +81,7 @@ export default async function Nav() {
               <Suspense
                 fallback={
                   <LocalizedClientLink
-                    className="text-black hover:text-gray-600 transition-colors"
+                    className="hover:opacity-75 transition-opacity"
                     href="/cart"
                     data-testid="nav-cart-link"
                   >

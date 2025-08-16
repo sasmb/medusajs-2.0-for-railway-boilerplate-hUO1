@@ -26,7 +26,7 @@ const Hero = () => {
   }, [images.length])
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden" style={{ height: 'calc(100vh + 48px)', marginTop: '-48px' }}>
       {/* Background Images with Smooth Transitions */}
       {images.map((image, index) => (
         <div
@@ -44,57 +44,63 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black bg-opacity-40" />
       
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6" style={{ paddingTop: '48px' }}>
         <div className="max-w-4xl mx-auto">
-          <Heading
-            level="h1"
-            className="text-white mb-8 drop-shadow-lg"
-            style={{
-              fontFamily: 'TimesNow, Times New Roman, serif',
-              fontStyle: 'normal',
-              fontWeight: 400,
-              color: 'rgb(255, 255, 255)',
-              fontSize: '50px',
-              lineHeight: '45px',
-              textAlign: 'left',
-              maxWidth: '800px'
-            }}
-          >
-            Making Pretty Girls Prettier
-          </Heading>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                      <Button 
-            size="large"
-            className="bg-white text-black hover:bg-gray-100 px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
-            style={{
-              fontFamily: 'ABCPermanent, Arial, sans-serif',
-              fontStyle: 'normal',
-              fontWeight: 400,
-              fontSize: '11px',
-              lineHeight: '13px',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase'
-            }}
-          >
-            Shop Now
-          </Button>
-          <Button 
-            variant="outline"
-            size="large" 
-            className="border-white text-white hover:bg-white hover:text-black px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
-            style={{
-              fontFamily: 'ABCPermanent, Arial, sans-serif',
-              fontStyle: 'normal',
-              fontWeight: 400,
-              fontSize: '11px',
-              lineHeight: '13px',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase'
-            }}
-          >
-            Contact Us
-          </Button>
+          <div className="text-center">
+            <Heading
+              level="h1"
+              className="text-white mb-6 drop-shadow-lg"
+              style={{
+                fontFamily: 'TimesNow, Times New Roman, serif',
+                fontStyle: 'normal',
+                fontWeight: 400,
+                color: 'rgb(255, 255, 255)',
+                fontSize: '50px',
+                lineHeight: '45px',
+                maxWidth: '800px'
+              }}
+            >
+              We Make Pretty
+              <br />
+              Girls Look
+              <br />
+              Prettier
+            </Heading>
+            
+            {/* Call to Action Buttons - Fourth Line */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
+              <Button 
+                size="small"
+                className="bg-white text-black hover:bg-gray-100 px-4 py-2 font-medium transition-all duration-300 transform hover:scale-105"
+                style={{
+                  fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '9px',
+                  lineHeight: '11px',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                Shop Now
+              </Button>
+              <Button 
+                variant="outline"
+                size="small" 
+                className="border-white text-white hover:bg-white hover:text-black px-4 py-2 font-medium transition-all duration-300 transform hover:scale-105"
+                style={{
+                  fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '9px',
+                  lineHeight: '11px',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase'
+                }}
+              >
+                Contact Us
+              </Button>
+            </div>
           </div>
         </div>
         
