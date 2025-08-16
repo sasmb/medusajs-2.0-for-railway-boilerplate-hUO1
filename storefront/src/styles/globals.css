@@ -164,32 +164,37 @@
     letter-spacing: -0.01em;
   }
 
-  /* Body Text - Clean Sans-Serif */
-  .body-sans {
-    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.01em;
-  }
-
-  .body-sans-lg {
-    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    font-size: clamp(16px, 2.5vw, 20px);
-    line-height: clamp(20px, 3vw, 24px);
-    letter-spacing: 0.01em;
-  }
-
-  .body-sans-md {
-    font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 400;
-    font-size: clamp(14px, 2vw, 16px);
-    line-height: clamp(16px, 2.5vw, 20px);
-    letter-spacing: 0.01em;
-  }
-
-        .body-sans-sm {
+        /* Body Text - Clean Sans-Serif */
+      .body-sans {
         font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      .body-sans-lg {
+        font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(12, 12, 12);
+        font-size: 30px;
+        line-height: 33px;
+      }
+
+      .body-sans-md {
+        font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 8px;
+        line-height: 10px;
+      }
+
+      .body-sans-sm {
+        font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
         font-weight: 400;
         font-size: 11px;
         line-height: 13px;
@@ -199,6 +204,7 @@
 
       .body-sans-xs {
         font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
         font-weight: 400;
         font-size: 9px;
         line-height: 11px;
@@ -209,6 +215,7 @@
         /* Navigation Specific */
       .nav-text {
         font-family: 'ABCPermanent', 'Helvetica Neue', Arial, sans-serif;
+        font-style: normal;
         font-weight: 400;
         font-size: 11px;
         line-height: 13px;

@@ -76,7 +76,7 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full text-white hover:text-gray-300 transition-colors relative" style={{ filter: 'drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5))' }}>
+        <Popover.Button className="h-full text-black hover:text-gray-600 transition-colors relative" style={{ filter: 'none' }}>
           <div className="flex items-center" data-testid="nav-cart-link">
             <svg 
               width="16" 
@@ -93,7 +93,7 @@ const CartDropdown = ({
               <path d="m16 10a4 4 0 0 1-8 0"/>
             </svg>
             {totalItems > 0 && (
-              <span className="absolute -top-1 -right-1 bg-white text-black text-xs font-medium rounded-full w-4 h-4 flex items-center justify-center">
+                                        <span className="absolute -top-1 -right-1 bg-black text-white text-xs font-medium rounded-full w-4 h-4 flex items-center justify-center">
                 {totalItems}
               </span>
             )}

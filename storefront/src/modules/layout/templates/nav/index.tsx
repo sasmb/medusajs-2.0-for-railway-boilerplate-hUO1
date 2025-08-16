@@ -12,7 +12,7 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto" style={{ background: 'rgba(0, 0, 0, 0.1)' }}>
+      <header className="relative h-12 mx-auto bg-transparent">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full h-full">
           {/* Left - Brand Logo Only */}
           <div className="flex items-center">
@@ -27,20 +27,23 @@ export default async function Nav() {
           </div>
 
           {/* Right - Navigation + Icons */}
-          <div className="flex items-center space-x-8">
+          <div 
+            className="flex items-center space-x-8 px-6 py-2 rounded-sm"
+            style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)' }}
+          >
             {/* Navigation Links */}
             <div className="hidden lg:flex items-center space-x-8">
               <LocalizedClientLink
                 href="/store"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-black hover:text-gray-600 transition-colors"
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontStyle: 'normal',
                   fontWeight: 400,
                   fontSize: '11px',
                   lineHeight: '13px',
                   letterSpacing: '0.05em',
-                  textTransform: 'uppercase',
-                  textShadow: '0 1px 3px rgba(0, 0, 0, 0.5)'
+                  textTransform: 'uppercase'
                 }}
                 data-testid="nav-shop-link"
               >
@@ -48,15 +51,15 @@ export default async function Nav() {
               </LocalizedClientLink>
               <LocalizedClientLink
                 href="/about"
-                className="text-white hover:text-gray-300 transition-colors"
+                className="text-black hover:text-gray-600 transition-colors"
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
+                  fontStyle: 'normal',
                   fontWeight: 400,
                   fontSize: '11px',
                   lineHeight: '13px',
                   letterSpacing: '0.05em',
-                  textTransform: 'uppercase',
-                  textShadow: '0 1px 3px rgba(0, 0, 0, 0.5)'
+                  textTransform: 'uppercase'
                 }}
                 data-testid="nav-about-link"
               >
@@ -68,8 +71,8 @@ export default async function Nav() {
             <div className="hidden lg:flex items-center space-x-4">
               <LocalizedClientLink
                 href="/account"
-                className="text-white hover:text-gray-300 transition-colors"
-                style={{ filter: 'drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5))' }}
+                className="text-black hover:text-gray-600 transition-colors"
+                style={{ filter: 'none' }}
                 data-testid="nav-account-link"
               >
                 <User size={16} />
@@ -77,7 +80,7 @@ export default async function Nav() {
               <Suspense
                 fallback={
                   <LocalizedClientLink
-                    className="text-white hover:text-gray-300 transition-colors"
+                    className="text-black hover:text-gray-600 transition-colors"
                     href="/cart"
                     data-testid="nav-cart-link"
                   >

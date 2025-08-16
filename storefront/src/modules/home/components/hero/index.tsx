@@ -49,25 +49,18 @@ const Hero = () => {
           <Heading
             level="h1"
             className="text-white mb-8 drop-shadow-lg"
-                    style={{
-          fontFamily: 'TimesNow, Times New Roman, serif',
-          fontWeight: 400,
-          fontSize: 'clamp(36px, 6vw, 60px)',
-          lineHeight: 'clamp(34px, 5.5vw, 58px)',
-          letterSpacing: '-0.02em',
-          textAlign: 'left',
-          maxWidth: '800px'
-        }}
+            style={{
+              fontFamily: 'TimesNow, Times New Roman, serif',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              color: 'rgb(255, 255, 255)',
+              fontSize: '50px',
+              lineHeight: '45px',
+              textAlign: 'left',
+              maxWidth: '800px'
+            }}
           >
-            Transformative
-            <br />
-            and
-            <br />
-            Inclusive
-            <br />
-            Salon-Grade
-            <br />
-            Hair Control
+            Making Pretty Girls Prettier
           </Heading>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -76,6 +69,8 @@ const Hero = () => {
             className="bg-white text-black hover:bg-gray-100 px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
             style={{
               fontFamily: 'ABCPermanent, Arial, sans-serif',
+              fontStyle: 'normal',
+              fontWeight: 400,
               fontSize: '11px',
               lineHeight: '13px',
               letterSpacing: '0.05em',
@@ -90,6 +85,8 @@ const Hero = () => {
             className="border-white text-white hover:bg-white hover:text-black px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
             style={{
               fontFamily: 'ABCPermanent, Arial, sans-serif',
+              fontStyle: 'normal',
+              fontWeight: 400,
               fontSize: '11px',
               lineHeight: '13px',
               letterSpacing: '0.05em',

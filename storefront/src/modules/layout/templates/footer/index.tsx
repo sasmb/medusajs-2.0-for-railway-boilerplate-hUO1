@@ -13,14 +13,15 @@ export default async function Footer() {
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               LINKEDIN
             </a>
@@ -29,14 +30,15 @@ export default async function Footer() {
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               INSTAGRAM
             </a>
@@ -45,14 +47,15 @@ export default async function Footer() {
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               FACEBOOK
             </a>
@@ -61,14 +64,15 @@ export default async function Footer() {
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               TIKTOK
             </a>
@@ -77,14 +81,15 @@ export default async function Footer() {
               target="_blank"
               rel="noreferrer"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               YOUTUBE
             </a>
@@ -95,98 +100,105 @@ export default async function Footer() {
             <LocalizedClientLink
               href="/store"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               OUR PRODUCTS
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/contact"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               CONTACT
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/affiliate"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               AFFILIATES
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/careers"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               CAREERS
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/about"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               ABOUT US
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/faq"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               FAQ
             </LocalizedClientLink>
             <LocalizedClientLink
               href="/terms"
               className="text-white hover:text-gray-300 transition-colors"
-              style={{
-                fontFamily: 'ABCPermanent, Arial, sans-serif',
-                fontWeight: 400,
-                                            fontSize: '11px',
+                                        style={{
+                            fontFamily: 'ABCPermanent, Arial, sans-serif',
+                            fontStyle: 'normal',
+                            fontWeight: 400,
+                            fontSize: '11px',
                             lineHeight: '13px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-              }}
+                            letterSpacing: '0.05em',
+                            textTransform: 'uppercase'
+                          }}
             >
               TERMS & CONDITIONS
             </LocalizedClientLink>
