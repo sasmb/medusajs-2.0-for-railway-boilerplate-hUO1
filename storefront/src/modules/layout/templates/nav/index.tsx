@@ -12,13 +12,14 @@ export default async function Nav() {
 
   return (
     <div className="sticky top-0 inset-x-0 z-50 group">
-      <header className="relative h-16 mx-auto bg-transparent">
+      <header className="relative h-16 mx-auto" style={{ background: 'rgba(0, 0, 0, 0.1)' }}>
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full h-full">
           {/* Left - Brand Logo Only */}
           <div className="flex items-center">
             <LocalizedClientLink
               href="/"
               className="text-white text-xl font-bold tracking-wider hover:text-gray-300 transition-colors"
+              style={{ textShadow: '0 1px 3px rgba(0, 0, 0, 0.5)' }}
               data-testid="nav-store-link"
             >
               LUXURY HAIR
@@ -35,10 +36,11 @@ export default async function Nav() {
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
                   fontWeight: 400,
-                  fontSize: '9px',
-                  lineHeight: '14px',
+                  fontSize: '11px',
+                  lineHeight: '13px',
                   letterSpacing: '0.05em',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
+                  textShadow: '0 1px 3px rgba(0, 0, 0, 0.5)'
                 }}
                 data-testid="nav-shop-link"
               >
@@ -50,10 +52,11 @@ export default async function Nav() {
                 style={{
                   fontFamily: 'ABCPermanent, Arial, sans-serif',
                   fontWeight: 400,
-                  fontSize: '9px',
-                  lineHeight: '14px',
+                  fontSize: '11px',
+                  lineHeight: '13px',
                   letterSpacing: '0.05em',
-                  textTransform: 'uppercase'
+                  textTransform: 'uppercase',
+                  textShadow: '0 1px 3px rgba(0, 0, 0, 0.5)'
                 }}
                 data-testid="nav-about-link"
               >
@@ -66,6 +69,7 @@ export default async function Nav() {
               <LocalizedClientLink
                 href="/account"
                 className="text-white hover:text-gray-300 transition-colors"
+                style={{ filter: 'drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5))' }}
                 data-testid="nav-account-link"
               >
                 <User size={16} />

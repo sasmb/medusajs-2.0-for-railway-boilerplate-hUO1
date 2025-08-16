@@ -16,8 +16,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -32,8 +32,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -48,8 +48,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -64,8 +64,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -80,8 +80,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -98,8 +98,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -112,8 +112,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -126,8 +126,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -140,8 +140,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -154,8 +154,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -168,8 +168,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}
@@ -182,8 +182,8 @@ export default async function Footer() {
               style={{
                 fontFamily: 'ABCPermanent, Arial, sans-serif',
                 fontWeight: 400,
-                fontSize: '9px',
-                lineHeight: '14px',
+                                            fontSize: '11px',
+                            lineHeight: '13px',
                 letterSpacing: '0.05em',
                 textTransform: 'uppercase'
               }}

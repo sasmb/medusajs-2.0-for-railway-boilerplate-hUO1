@@ -76,7 +76,7 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full text-white hover:text-gray-300 transition-colors relative">
+        <Popover.Button className="h-full text-white hover:text-gray-300 transition-colors relative" style={{ filter: 'drop-shadow(0 1px 3px rgba(0, 0, 0, 0.5))' }}>
           <div className="flex items-center" data-testid="nav-cart-link">
             <svg 
               width="16" 

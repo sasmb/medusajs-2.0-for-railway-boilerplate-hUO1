@@ -49,15 +49,15 @@ const Hero = () => {
           <Heading
             level="h1"
             className="text-white mb-8 drop-shadow-lg"
-            style={{
-              fontFamily: 'TimesNow, Times New Roman, serif',
-              fontWeight: 400,
-              fontSize: 'clamp(48px, 10vw, 120px)',
-              lineHeight: 'clamp(44px, 9vw, 110px)',
-              letterSpacing: '-0.02em',
-              textAlign: 'left',
-              maxWidth: '800px'
-            }}
+                    style={{
+          fontFamily: 'TimesNow, Times New Roman, serif',
+          fontWeight: 400,
+          fontSize: 'clamp(36px, 6vw, 60px)',
+          lineHeight: 'clamp(34px, 5.5vw, 58px)',
+          letterSpacing: '-0.02em',
+          textAlign: 'left',
+          maxWidth: '800px'
+        }}
           >
             Transformative
             <br />
@@ -71,19 +71,33 @@ const Hero = () => {
           </Heading>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="large"
-              className="bg-white text-black hover:bg-gray-100 px-8 py-3 text-lg font-medium transition-all duration-300 transform hover:scale-105"
-            >
-              Shop Now
-            </Button>
-            <Button 
-              variant="outline"
-              size="large" 
-              className="border-white text-white hover:bg-white hover:text-black px-8 py-3 text-lg font-medium transition-all duration-300 transform hover:scale-105"
-            >
-              Contact Us
-            </Button>
+                      <Button 
+            size="large"
+            className="bg-white text-black hover:bg-gray-100 px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
+            style={{
+              fontFamily: 'ABCPermanent, Arial, sans-serif',
+              fontSize: '11px',
+              lineHeight: '13px',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase'
+            }}
+          >
+            Shop Now
+          </Button>
+          <Button 
+            variant="outline"
+            size="large" 
+            className="border-white text-white hover:bg-white hover:text-black px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105"
+            style={{
+              fontFamily: 'ABCPermanent, Arial, sans-serif',
+              fontSize: '11px',
+              lineHeight: '13px',
+              letterSpacing: '0.05em',
+              textTransform: 'uppercase'
+            }}
+          >
+            Contact Us
+          </Button>
           </div>
         </div>
         
