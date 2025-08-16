@@ -27,12 +27,14 @@ export default async function Nav() {
           </div>
 
           {/* Right - Navigation + Icons */}
-          <div 
-            className="flex items-center space-x-8 px-6 py-2 rounded-sm"
-            style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)' }}
-          >
-            {/* Navigation Links */}
-            <div className="hidden lg:flex items-center space-x-8">
+          <div className="flex items-center space-x-8">
+            {/* Desktop Navigation with White Background */}
+            <div 
+              className="hidden lg:flex items-center space-x-8 px-6 py-2 rounded-sm"
+              style={{ background: 'rgba(255, 255, 255, 0.95)', backdropFilter: 'blur(10px)' }}
+            >
+              {/* Navigation Links */}
+              <div className="flex items-center space-x-8">
               <LocalizedClientLink
                 href="/store"
                 className="hover:opacity-75 transition-opacity"
@@ -69,8 +71,8 @@ export default async function Nav() {
               </LocalizedClientLink>
             </div>
 
-            {/* User Icons */}
-            <div className="hidden lg:flex items-center space-x-4">
+              {/* User Icons */}
+              <div className="flex items-center space-x-4">
               <LocalizedClientLink
                 href="/account"
                 className="text-black hover:opacity-75 transition-opacity"
@@ -91,9 +93,10 @@ export default async function Nav() {
               >
                 <CartButton />
               </Suspense>
+              </div>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu - No White Background */}
             <div className="lg:hidden">
               <SideMenu regions={regions} />
             </div>
